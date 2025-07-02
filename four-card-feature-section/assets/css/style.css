@@ -112,6 +112,9 @@ h2 {
   .fc-feature-section .container {
     max-width: 100%;
   }
+  .fc-feature-section .max-w-md {
+    max-width: 100%;
+  }
   p {
     font-size: 13px;
   }
