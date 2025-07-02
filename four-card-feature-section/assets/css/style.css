@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-white: #ffffff;
+  --color-grey-500: #4c4e61;
+  --color-grey-400: #697077;
+  --color-red: #ea5353;
+  --color-cyan: #45d3d3;
+  --color-orange: #fcaf4a;
+  --color-blue: #549ef2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-grey-500);
+  background: var(--color-white);
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--color-grey-500);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.fc-feature-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+.fc-feature-section h1 {
+  margin-bottom: 1.2rem;
+}
+.fc-feature-section h1 span {
+  display: block;
+}
+.fc-feature-section h1 span:first-child {
+  font-weight: 200;
+}
+.fc-feature-section .max-w-md {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  place-items: center;
+  margin-top: 4rem;
+}
+.cards .card {
+  background: var(--color-white);
+  border-radius: 6px;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-top: 5px solid transparent;
+}
+.cards .card.red {
+  border-color: var(--color-red);
+}
+.cards .card.cyan {
+  border-color: var(--color-cyan);
+}
+.cards .card.orange {
+  border-color: var(--color-orange);
+}
+.cards .card.blue {
+  border-color: var(--color-blue);
+}
+.cards .card p {
+  color: var(--color-grey-400);
+  font-size: 14px;
+}
+.cards .card figure {
+  text-align: right;
+}
+.cards .card figure img {
+  display: inline-block;
+  width: 60px;
+  margin-top: 2rem;
+}
+.cards .cards-row {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .fc-feature-section .container {
+    max-width: 100%;
+  }
+  p {
+    font-size: 13px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    place-items: normal;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
