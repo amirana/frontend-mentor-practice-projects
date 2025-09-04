@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Preview Component</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="flex-center">
+    <section class="article-preview-section">
+        <div class="card-img">
+            <img src="assets/imgs/drawers.jpg" alt="Drawers">
+        </div>
+        <div class="card-content">
+            <h3 class="title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
+            <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+            <div class="avatar-share-block">
+                <div class="avatar-details flex-center">
+                    <img src="assets/imgs/avatar-michelle.jpg" alt="Michelle Avatar" class="avatar-img">
+                    <div>
+                        <a href="#" class="author-name">Michelle Appleton</a>
+                        <p class="date">28 Jun 2020</p>
+                    </div>
+                </div>
+                <a href="#" class="share-icon flex-center">
+                    <img src="assets/imgs/icon-share.svg" alt="Share Icon">
+                </a>
+            </div>
+             <ul class="social-media-links flex-center">
+                <li><p>SHARE</p></li>
+                <li>
+                    <a href="#">
+                        <img src="assets/imgs/icon-facebook.svg" alt="Facebook Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/imgs/icon-twitter.svg" alt="Twitter Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/imgs/icon-pinterest.svg" alt="Pinterest Icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+
+        const shareIcon = document.querySelector(".share-icon");
+        const socialLinks = document.querySelector(".social-media-links");
+
+        shareIcon.addEventListener("click", function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            document.querySelector(".social-media-links").classList.toggle("active")
+        });
+
+        document.addEventListener("click", function (e){
+            if (!socialLinks.contains(e.target) && !shareIcon.contains(e.target)) {
+                socialLinks.classList.remove("active");
+            }
+        });
+    </script>
+</body>
+</html>

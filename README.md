@@ -13,5 +13,6 @@ Each folder contains one completed challenge with its source code and assets.
 | Product Preview Card Component | [Live](https://amirana.github.io/frontend-mentor-practice-projects/product-preview-card/) | [Code](./product-preview-card) |
 | Four Card Feature Section | [Live](https://amirana.github.io/frontend-mentor-practice-projects/four-card-feature-section/) | [Code](./four-card-feature-section) |
 | Testimonials Grid Section | [Live](https://amirana.github.io/frontend-mentor-practice-projects/testimonials-grid-section/) | [Code](./testimonials-grid-section) |
+| Article Preview Component | [Live](https://amirana.github.io/frontend-mentor-practice-projects/article-preview-component/) | [Code](./article-preview-component) |
 
 
