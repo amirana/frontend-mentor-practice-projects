@@ -11,7 +11,6 @@ This is my solution to the [Frontend Mentor](https://www.frontendmentor.io/) **F
 - Semantic HTML5
 - SCSS 
 - JS
-- Vercel (for deployment)
 
 ---
 

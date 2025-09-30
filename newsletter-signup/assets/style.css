@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff6257;
+    --blue-800: #242742;
+    --blue-700: #36384e;
+    --grey: #949494;
+    --white: #ffffff;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--blue-800);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 20px;
+}
+
+.newsletter-signup{
+    max-width: 900px; 
+}
+
+h1{
+    color: var(--blue-700);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--blue-800);
+}
+
+.left-content{
+    padding: 3rem;
+    flex: 1;
+}
+
+.right-content{
+    overflow: hidden;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+ul{
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+ul li{
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+ul li:before{
+    content: '';
+    background: url('../assets/images/icon-list.svg') no-repeat center center;
+    background-size: contain;
+    color: var(--red);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.signup-form{
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.signup-form label{
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1.1rem;
+}
+
+.signup-form input[type="email"]{
+    border: 1px solid var(--grey);
+}
+
+.signup-form input[type="email"].error{
+    border: 1px solid var(--red);
+    background: rgba(255, 98, 87, 0.2);
+    color: var(--red);
+}
+
+.default-btn{
+    background: var(--blue-800);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    width: 100%;
+    padding: 1.1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.default-btn:hover{
+    background: linear-gradient(to left, #ff6741, #ff5472);
+    color: var(--white);
+    box-shadow: 0 10px 20px rgba(255, 82, 113, 0.3);
+}
+
+.signup-form #msg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--red);
+}
+
+.thank-you-popup{
+    max-width: 420px;
+    padding: 3rem;
+}
+
+.thank-you-popup .icon-success{
+    width: 50px;
+}
+
+.thank-you-popup h1{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    line-height: 1.1;
+}
+
+.thank-you-popup p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.mobile-img{
+    display: none;
+}
+
+@media screen and (width <= 640px){
+    body{
+        height: auto;
+    }
+    .popup{
+        margin: 0;
+        max-width: 100%;
+    }
+    .newsletter-signup{
+        flex-direction: column-reverse;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .right-content{
+        padding: 0;
+        align-self: normal;
+    }
+    .left-content{
+        padding: 2rem;
+
+    }
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+        width: 100%;   
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .thank-you-popup{
+        height: 100dvh;
+        padding: 2rem;
+    }
+
+    .thank-you-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .thank-you-content .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .thank-you-content button{
+        margin-bottom: 50px;
+    }
+}
